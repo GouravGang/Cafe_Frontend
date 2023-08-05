@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A To Z Cafe</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('./itl_cat_coffee-wallpaper-hd_366126-transformed.jpeg');
+        color: aliceblue;
+        width: 100%;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .left {
+        /* border: 3px solid blue; */
+        display: inline-block;
+        position: relative;
+        left: 10px;
+        top: 23px;
+    }
+
+    .mid {
+        /* border: 3px solid blue; */
+        display: inline-block;
+        width: 40%;
+        /* margin:0px auto; */
+        margin-left: 25%;
+        margin-top: 17px;
+
+        /* margin-top: 0px; */
+        position: absolute;
+    }
+
+    .right {
+        /* border: 3px solid blue; */
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 23px;
+    }
+
+    .navigation {
+        position: static;
+    }
+
+    .navigation li {
+        display: inline-block;
+        background-color: gray;
+    }
+
+    .navigation li a {
+        color: black;
+        text-decoration: none;
+        padding: 3px 24px;
+        font-size: 20px;
+    }
+
+    .navigation li a:hover,
+    .navigation li a.active {
+        text-decoration: underline;
+        color: rgb(162, 146, 125);
+
+        font-weight: bold;
+        /* background-color: darkgray; */
+        border-radius: 10%;
+        background-color: black;
+    }
+
+    .left img {
+        height: 75px;
+        width: 75px;
+        /* filter: invert(80%); */
+    }
+
+    .left div {
+        text-align: center;
+        font-weight: bold;
+        filter: brightness(80%);
+        text-decoration: overline;
+        line-height: 7px;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .btn {
+        color: black;
+        font-size: 16px;
+        margin: 9px 9px;
+        padding: 3px 24px;
+        background-color: gray;
+        cursor: pointer;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .right .btn:hover {
+        text-decoration: underline;
+        color: rgb(162, 146, 125);
+        background-color: black;
+        font-weight: bold;
+    }
+
+    .container {
+        border: 2px solid whitesmoke;
+        border-radius: 28px;
+        display: block;
+        width: 20%;
+        margin: 106px 100px;
+        padding: 75px;
+    }
+
+    .formele input {
+        text-align: center;
+        display: block;
+        width: 250px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 3px;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .container h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .bt {
+        display: block;
+        margin: 10px auto;
+        width: 70px;
+        padding: 8px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .bt:hover {
+        background-color: black;
+        color: rgb(162, 146, 125);
+        text-decoration: underline;
+        font-family: 'Dancing Script', cursive;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src='./Screenshot_2023-08-05_004206-transformed-fotor-bg-remover-2023080504838.png'>
+            <div>A To Z Cafe</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Book A Table</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Your Details</h1>
+        <form action="php">
+            <div class="formele">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="formele">
+                <input type="text" placeholder="Contact Number">
+            </div>
+            <div class="formele">
+                <input type="text" placeholder="Enter Your Email">
+            </div>
+            <div class="formele">
+                <input type="text" placeholder="Enter Your Address">
+            </div>
+            <button class="bt">Submit</button>
+            <button class="bt">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
